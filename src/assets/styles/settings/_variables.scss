@@ -1,0 +1,23 @@
+@import "./colors";
+
+$font-family-primary: "Inter";
+
+//Border Radius
+$radius6: 6px;
+$radius8: 8px;
+$radius10: 10px;
+$radius20: 20px;
+$round-radius: 50px;
+$circle-radius: 50%;
+
+//layouts
+$header-height: 60px;
+$sub-header-height: 50px;
+$contact-info-width: 315px;
+
+$border-transparent: 1px solid transparent;
+$border-primary: 1px solid var(--border-primary);
+$border-secondary: 1px solid var(--border-secondary);
+$border-tertiary: 1px solid var(--border-tertiary);
+$border-dark-05: 1px solid var(--bg-dark-05);
+$border-primary-color: 1px solid var(--primary);

@@ -1,0 +1,38 @@
+@use "../settings/mixins" as *;
+@use "../settings/variables" as *;
+@use "../settings/colors" as *;
+
+.mat-mdc-tab-label-container {
+  padding: 10px;
+  .mat-mdc-tab-list {
+    margin: -10px;
+    .mat-mdc-tab-labels {
+      background: var(--bg-secondary) !important;
+      border-radius: $radius6 !important;
+      .mdc-tab {
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--text-tertiary) !important;
+        .mdc-tab-indicator,
+        .mat-ripple {
+          display: none;
+        }
+        &.mdc-tab--active {
+          background: var(--white) !important;
+          border-radius: $radius6 !important;
+          .mdc-tab__content,
+          .mdc-tab__text-label {
+            color: var(--text-primary) !important;
+          }
+        }
+      }
+    }
+    .mdc-tab {
+      letter-spacing: normal !important;
+    }
+  }
+}
+
+.mat-mdc-tab .mdc-tab__ripple::before {
+  background: var(--white) !important;
+}

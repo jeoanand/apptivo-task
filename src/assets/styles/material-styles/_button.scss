@@ -1,0 +1,116 @@
+@use "../settings/variables" as *;
+@use "../settings/colors" as *;
+@use "../settings/mixins" as *;
+
+.mat-mdc-button-base,
+.mdc-fab {
+  margin: 0;
+  box-shadow: none !important;
+  .mat-mdc-button-touch-target {
+    @include size(30px !important);
+  }
+
+  &.mat-mdc-fab {
+    &.mat-primary {
+      background: var(--primary);
+    }
+    &.mat-add-button {
+      @include size(30px);
+    }
+  }
+  &.mat-mdc-mini-fab {
+    @include size(36px);
+    background: var(--bg-primary);
+    .mat-icon {
+      font-size: 16px;
+      line-height: 18px;
+      @include size(20px);
+      color: var(--text-primary);
+    }
+  }
+  &.fab-outline {
+    background: transparent !important;
+    border: $border-secondary !important;
+    .mat-icon {
+      line-height: 20px !important;
+      color: var(--text-tertiary) !important;
+    }
+    &:hover,
+    &:focus {
+      background: var(--primary) !important;
+      border: var(--primary) !important;
+      .mat-icon {
+        color: var(--white) !important;
+      }
+    }
+  }
+}
+
+.mdc-icon-button {
+  &.header-action-icon {
+    @include size(30px);
+    padding: 0 !important;
+    .mat-icon {
+      @include size(20px);
+    }
+    .mat-mdc-button-touch-target {
+      @include size(30px);
+    }
+    &:hover {
+      background: var(--bg-white-1) !important;
+    }
+  }
+}
+
+//Unelvated Button
+
+.mat-mdc-unelevated-button {
+  letter-spacing: unset !important;
+  .mat-mdc-button-persistent-ripple {
+    display: none;
+  }
+  &.contact-lead-btn {
+    height: 44px;
+    font-size: 12px !important;
+    font-weight: 600;
+    @include button-color(var(--white) !important, var(--black) !important, transparent);
+    border-radius: $radius8;
+    &:hover,
+    &:focus {
+      background: var(--white) !important;
+      border: 1px solid var(--black) !important;
+      color: var(--black) !important;
+    }
+  }
+  &.mat-filter-btn {
+    height: 44px;
+    padding: 0 16px;
+    font-size: 14px !important;
+    border: 1px solid;
+    border-radius: $radius8;
+    @include button-color(var(--text-tertiary) !important, var(--white) !important, var(--bg-dark-08));
+    &:hover,
+    &:focus {
+      background: var(--white) !important;
+      border: 1px solid var(--primary) !important;
+      color: var(--primary) !important;
+    }
+  }
+}
+
+.mat-mdc-outlined-button {
+  letter-spacing: unset !important;
+  &.contact-contract-btn {
+    height: 44px;
+    font-size: 12px !important;
+    font-weight: 600;
+    @include button-color(var(--primary) !important, transparent, $border-primary-color !important);
+    border-radius: $radius8;
+    &:hover,
+    &:focus {
+      background: var(--primary) !important;
+      border: 1px solid var(--primary) !important;
+      color: var(--white) !important;
+    }
+  }
+}

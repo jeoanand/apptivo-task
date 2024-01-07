@@ -1,0 +1,274 @@
+@use "./mixins" as *;
+@use "./variables" as *;
+@use "./colors" as *;
+
+* {
+  font-family: $font-family-primary !important;
+  box-sizing: border-box;
+}
+
+html {
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: stretch;
+}
+
+body {
+  background: var(--white) !important;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-primary !important;
+  color: var(--text-primary);
+  overflow-x: hidden;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: stretch;
+}
+
+html,
+body,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+p {
+  margin: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 0;
+  outline: none;
+  color: var(--text-1);
+  overflow-wrap: break-word;
+}
+
+.mat-h4,
+.mat-body-1,
+.mat-typography .mat-h4,
+.mat-typography .mat-body-1,
+.mat-typography h4 {
+  margin: 0;
+}
+
+.mat-body p,
+.mat-body-2 p,
+.mat-typography .mat-body p,
+.mat-typography .mat-body-2 p,
+.mat-typography p {
+  margin: 0;
+}
+
+.mat-icon {
+  width: auto !important;
+  height: auto !important;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  outline-color: transparent;
+  appearance: none;
+}
+button:focus,
+button > .focus {
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+::selection {
+  color: var(--primary);
+}
+
+//App Classes
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.appearance-none {
+  @include appearance(none);
+}
+.img-max-width {
+  max-width: 100%;
+}
+.img-max-height {
+  max-height: 100%;
+}
+
+.radius-half {
+  border-radius: $round-radius;
+}
+.radius-full {
+  border-radius: $circle-radius;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+.material-icons {
+  font-family: "Material Icons" !important;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined" !important;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}

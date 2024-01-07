@@ -1,0 +1,47 @@
+//Product Colors
+:root {
+  --primary: #1dabe2;
+  --primary-hover: #4abce8;
+  --primary-pressed: #1a9cce;
+
+  --text-primary: #02080c;
+  --text-secondary: #333333;
+  --text-tertiary: #666666;
+  --text-hint: #999999;
+  --text-light: #cccccc;
+
+  --text-dark-primary: #cccccc;
+  --text-dark-secondary: #999999;
+  --text-dark-tertiary: #666666;
+
+  --bg-primary: #f0f3f5;
+  --bg-secondary: #e0e7eb;
+  --bg-tertiary: #d0dbe1;
+  --bg-header: #02080c;
+
+  --green: #31bd65;
+  --red: #ff5c5f;
+  --yellow: #ffc129;
+  --link: #2c72ee;
+
+  --white: #ffffff;
+  --black: #000000;
+
+  --border-primary: #e5e5e5;
+  --border-secondary: #ebebeb;
+  --border-tertiary: #f2f2f2;
+  --header-border-divider: #363f44;
+
+  --bg-dark-3: rgba(0, 0, 0, 0.3);
+  --bg-dark-2: rgba(0, 0, 0, 0.2);
+  --bg-dark-1: rgba(0, 0, 0, 0.1);
+  --bg-dark-08: rgba(0, 0, 0, 0.08);
+  --bg-dark-05: rgba(0, 0, 0, 0.05);
+  --bg-white-3: rgba(255, 255, 255, 0.3);
+  --bg-white-2: rgba(255, 255, 255, 0.2);
+  --bg-white-1: rgba(255, 255, 255, 0.1);
+  --bg-white-05: rgba(255, 255, 255, 0.05);
+  --red-opacity-15: rgba(255, 92, 95, 0.15);
+  --primary-opacity-15: rgba(29, 171, 226, 0.15);
+  --primary-opacity-10: rgba(29, 171, 226, 0.15);
+}

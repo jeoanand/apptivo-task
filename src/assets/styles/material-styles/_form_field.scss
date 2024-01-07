@@ -1,0 +1,64 @@
+@use "../settings/mixins" as *;
+@use "../settings/variables" as *;
+@use "../settings/colors" as *;
+
+/* Mat form field style overwrite here */
+
+.mat-mdc-form-field,
+.mat-mdc-input,
+.mat-mdc-form-field-type-mat-input {
+  width: 100%;
+  .mat-mdc-form-field-wrapper {
+    padding-bottom: 0 !important;
+  }
+
+  .mat-form-field-prefix {
+    padding-left: 10px;
+  }
+  .mat-form-field-suffix {
+    padding-right: 10px;
+  }
+
+  .mat-form-field-prefix,
+  .mat-form-field-suffix {
+    align-items: center;
+    display: flex; // So we can have multiple prefixes or suffixes
+    * + * {
+      margin-left: 8px; // 8px between them if there are multiple
+    }
+  }
+
+  .mat-form-field-infix {
+    padding: 0 !important;
+    border: none !important;
+  }
+  // If there's a prefix, only apply 8px padding on the left
+  .mat-form-field-prefix + .mat-form-field-infix {
+    .mat-form-field-label-wrapper {
+      .mat-form-field-label {
+        padding-left: 8px;
+      }
+    }
+  }
+
+  //mat form field placeholder style overwrite here
+  .mat-form-field-label-wrapper {
+    .mat-form-field-label {
+      padding-left: 12px;
+      .mat-placeholder-required {
+        display: none;
+      }
+    }
+  }
+
+  //mat form field underline style overwrite here
+  .mat-form-field-underline {
+    bottom: 0;
+    opacity: 0 !important;
+    z-index: -1;
+  }
+
+  .mat-floating-placeholder {
+    opacity: 0 !important;
+  }
+}
