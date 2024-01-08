@@ -57,6 +57,7 @@ $textColors:
   "link" var(--link),
   "success" var(--green),
   "warn" var(--red),
+  "process" var(--yellow),
   "primary-color" var(--primary),
   "black" var(--black),
   "white" var(--white);
@@ -79,6 +80,9 @@ $bgColors:
   "dark-1" var(--bg-dark-1),
   "dark-05" var(--bg-dark-05),
   "warn-15" var(--red-opacity-15),
+  "warn-10" var(--red-opacity-10),
+  "process-15" var(--yellow-opacity-15),
+  "process-1" var(--yellow-opacity-1),
   "primary-color-15" var(--primary-opacity-15),
   "primary-color-10" var(--primary-opacity-10),
   "warn" var(--red),

@@ -11,12 +11,12 @@
 
       <!-- Contact Activities Section -->
       <div class="contact-activities-section flex-1 p-24">
-        <form class="example-form">
-          <mat-form-field class="example-full-width">
-            <mat-icon matPrefix>search</mat-icon>
-            <input type="tel" matInput placeholder="Search">
-          </mat-form-field>
-        </form>
+        <div class="pb-20">
+          <div class="home-search">
+            <mat-icon class="text-tertiary">search</mat-icon>
+            <input type="text" name="search" placeholder="Search activities, Leads, Opportunities">
+          </div>
+        </div>
         <mat-tab-group>
           <mat-tab label="Activities"><app-contact-activities></app-contact-activities></mat-tab>
           <mat-tab label="Leads & Opportunities"><app-empty-screen></app-empty-screen></mat-tab>

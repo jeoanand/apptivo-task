@@ -67,4 +67,9 @@
   .mat-expansion-indicator::after {
     color: var(--text-light) !important;
   }
+  &.meetings-card {
+    .mat-expansion-panel-header {
+      min-height: 150px !important;
+    }
+  }
 }

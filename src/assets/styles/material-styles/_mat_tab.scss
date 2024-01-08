@@ -3,9 +3,7 @@
 @use "../settings/colors" as *;
 
 .mat-mdc-tab-label-container {
-  padding: 10px;
   .mat-mdc-tab-list {
-    margin: -10px;
     .mat-mdc-tab-labels {
       background: var(--bg-secondary) !important;
       border-radius: $radius6 !important;

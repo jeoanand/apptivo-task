@@ -9,18 +9,18 @@
           Management
           <mat-icon class="f-16 text-dark-secondary ml-2">arrow_drop_down</mat-icon>
         </a>
-        <a href="#" class="f-12 f-w-500 l-h-24 text-dark-secondary flex align-center">Financial
+        <a href="#" class="f-12 f-w-500 l-h-24 text-dark-secondary text-hover-dark-primary flex align-center">Financial
           <mat-icon class="f-16 text-dark-secondary ml-2">arrow_drop_down</mat-icon>
         </a>
-        <a href="#" class="f-12 f-w-500 l-h-24 text-dark-secondary text-hover-dark-primary">
+        <a href="#" class="f-12 f-w-500 l-h-24 text-dark-secondary text-hover-dark-primary flex align-center">
           CRM
           <mat-icon class="f-16 text-dark-secondary ml-2">arrow_drop_down</mat-icon>
         </a>
-        <a href="#" class="f-12 f-w-500 l-h-24 text-dark-secondary text-hover-dark-primary">
+        <a href="#" class="f-12 f-w-500 l-h-24 text-dark-secondary text-hover-dark-primary flex align-center">
           Human Resource
           <mat-icon class="f-16 text-dark-secondary ml-2">arrow_drop_down</mat-icon>
         </a>
-        <a href="#" class="f-12 f-w-500 l-h-24 text-dark-secondary text-hover-dark-primary">
+        <a href="#" class="f-12 f-w-500 l-h-24 text-dark-secondary text-hover-dark-primary flex align-center">
           More
           <mat-icon class="f-16 text-dark-secondary ml-2">arrow_drop_down</mat-icon>
         </a>
@@ -29,13 +29,12 @@
   </div>
   <div class="flex align-center">
     <div class="flex">
-      <!-- <form class="example-form">
-            <mat-form-field class="example-full-width">
-              <mat-icon matPrefix>search</mat-icon>
-              <input type="tel" matInput placeholder="Search">
-            </mat-form-field>
-          </form> -->
-
+      <form>
+        <div class="header-search-input search-dark">
+          <mat-icon class="text-tertiary">search</mat-icon>
+          <input type="text" name="search" placeholder="Search contacts">
+        </div>
+      </form>
       <button mat-fab color="primary" class="mat-add-button ml-16" aria-label="add details">
         <mat-icon>add</mat-icon>
       </button>
@@ -71,17 +70,20 @@
     <h3 class="f-16 f-w-500 text-secondary ml-8">Contact Details View</h3>
   </div>
   <div class="flex c-g-8">
-    <button mat-mini-fab color="accent" aria-label="add details">
+    <button mat-mini-fab class="small sub-head-actions sub-head-active" aria-label="add details">
       <mat-icon class="text-tertiary">home</mat-icon>
     </button>
-    <button mat-mini-fab color="accent" aria-label="add details">
+    <button mat-mini-fab class="small sub-head-actions" aria-label="add details">
       <mat-icon class="text-tertiary">insert_chart</mat-icon>
     </button>
-    <!-- <form class="example-form">
-            <mat-form-field class="example-full-width">
-              <mat-icon matPrefix>search</mat-icon>
-              <input type="tel" matInput placeholder="Search">
-            </mat-form-field>
-          </form> -->
+    <button mat-mini-fab class="small sub-head-actions" aria-label="add details">
+      <mat-icon class="text-tertiary">more_horiz</mat-icon>
+    </button>
+    <form>
+      <div class="header-search-input">
+        <mat-icon class="text-hint">search</mat-icon>
+        <input type="text" name="search" placeholder="Search contacts">
+      </div>
+    </form>
   </div>
 </div>

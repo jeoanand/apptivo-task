@@ -31,6 +31,18 @@ $theme: mat.define-light-theme(
   )
 );
 
+@mixin mat-ripple-theme($theme) {
+  .mat-ripple-element {
+    background-color: rgba(162, 49, 49, 0.4);
+  }
+}
+
+@mixin mat-mdc-ripple-theme($theme) {
+  .mat-ripple-element {
+    background-color: rgba(162, 49, 49, 0.4);
+  }
+}
+
 // $my-theme: mat.define-typography-level(
 //   $font-family: Inter,
 //   $font-weight: 400,

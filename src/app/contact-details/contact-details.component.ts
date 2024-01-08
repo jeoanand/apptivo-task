@@ -1,9 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTabsModule } from '@angular/material/tabs';
 
 //Components
@@ -20,11 +17,8 @@ import { EmptyScreenComponent } from '../components/empty-screen/empty-screen.co
   styleUrl: './contact-details.component.scss',
   standalone: true,
   imports: [
-    FormsModule,
     MatButtonModule,
     MatIconModule,
-    MatInputModule,
-    MatFormFieldModule,
     MatTabsModule,
     HeaderComponent,
     ContactInfoComponent,

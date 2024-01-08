@@ -11,54 +11,82 @@
   .mat-mdc-form-field-wrapper {
     padding-bottom: 0 !important;
   }
+}
 
-  .mat-form-field-prefix {
-    padding-left: 10px;
+.header-search-input {
+  position: relative;
+  .mat-icon {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    margin: auto 0;
+    font-size: 16px;
   }
-  .mat-form-field-suffix {
-    padding-right: 10px;
-  }
+  input {
+    height: 32px;
+    min-width: 200px;
+    border: none;
+    background: var(--bg-primary);
+    padding-left: 36px;
+    border-radius: $round-radius;
+    @include font(12px, 22px, 400, var(--text-primary));
+    &:hover,
+    &:focus,
+    &:active {
+      background: var(--bg-secondary);
+    }
+    ::placeholder {
+      @include font(12px, 20px, 400, var(--text-hint));
+    }
 
-  .mat-form-field-prefix,
-  .mat-form-field-suffix {
-    align-items: center;
-    display: flex; // So we can have multiple prefixes or suffixes
-    * + * {
-      margin-left: 8px; // 8px between them if there are multiple
+    ::-ms-input-placeholder {
+      @include font(12px, 20px, 400, var(--text-hint));
     }
   }
-
-  .mat-form-field-infix {
-    padding: 0 !important;
-    border: none !important;
-  }
-  // If there's a prefix, only apply 8px padding on the left
-  .mat-form-field-prefix + .mat-form-field-infix {
-    .mat-form-field-label-wrapper {
-      .mat-form-field-label {
-        padding-left: 8px;
-      }
+  &.search-dark {
+    input {
+      min-width: 270px;
+      @include font(12px, 22px, 400, var(--text-dark-primary));
+      background: var(--bg-white-15) !important;
     }
   }
+}
 
-  //mat form field placeholder style overwrite here
-  .mat-form-field-label-wrapper {
-    .mat-form-field-label {
-      padding-left: 12px;
-      .mat-placeholder-required {
-        display: none;
-      }
+.home-search {
+  position: relative;
+  height: 46px;
+  border-bottom: $border-tertiary;
+  .mat-icon {
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    margin: auto 0;
+    font-size: 16px;
+  }
+  input {
+    width: 100%;
+    height: 46px;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-color: var(--border-primary);
+    background: var(--bg-primary);
+    padding-left: 36px;
+    border-top-right-radius: $radius8;
+    border-top-left-radius: $radius8;
+    @include font(14px, 22px, 400, var(--text-primary));
+    &:hover,
+    &:focus,
+    &:active {
+      background: var(--white);
+      border-radius: $radius8;
     }
-  }
+    ::placeholder {
+      color: var(--text-light);
+    }
 
-  //mat form field underline style overwrite here
-  .mat-form-field-underline {
-    bottom: 0;
-    opacity: 0 !important;
-    z-index: -1;
-  }
-
-  .mat-floating-placeholder {
-    opacity: 0 !important;
+    ::-ms-input-placeholder {
+      color: var(--text-light);
+    }
   }
 }

@@ -2,6 +2,10 @@
 @use "../settings/colors" as *;
 @use "../settings/mixins" as *;
 
+.cdk-mouse-focused .mat-mdc-button-ripple {
+  background-color: var(--primary-opacity-05);
+}
+
 .mat-mdc-button-base,
 .mdc-fab {
   margin: 0;
@@ -26,6 +30,9 @@
       line-height: 18px;
       @include size(20px);
       color: var(--text-primary);
+    }
+    &.small {
+      @include size(30px !important);
     }
   }
   &.fab-outline {
